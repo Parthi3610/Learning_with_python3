@@ -1,8 +1,6 @@
 # def table(n):
 """tables function"""
 for i in range(10):
-    print(i, "\t" , 2**i)
+    print(i, "\t", 2**i)
 
-
-
-#table(5)
+# table(5)
