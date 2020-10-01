@@ -12,6 +12,7 @@ def test(did_pass):
 
 def test_suit():
     test(5+7 == 17)
+    test(5+7 == 12)
 
 
 test_suit()
