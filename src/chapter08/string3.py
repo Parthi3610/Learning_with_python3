@@ -1,18 +1,31 @@
-"""
-str = "hello world"
-print(str.find('ll',1,3))
-"""
+def find(str,ch):
+    #find the char and str
+    ix = 0
+    while ix < len(str):
+        if str[ix] == ch:
+            return ix
+        ix += 1
+    return -1
 
-import string
+print(find('hello world', 'o'))
+print(find('hello world', 'y'))
 
 
-def remov_punc(str):
-    not_punc = ""
-    # punctuation = "!\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~"
+def count_a(str,ch):
+    count = 0
     for i in str:
-        if i not in string.punctuation:
-            not_punc += i
-    return not_punc
+        if i == ch:
+            count+=1
+    return count
 
+print(count_a('hello world', 'o'))
+print(count_a('hello world', 'l'))
+print(count_a('hello world', 't'))
 
-print(remov_punc("sdsffhello @$@%^%*&#*& world"))
+'''
+def count_a(str,ch,start):
+    ix = start
+    if ix < len(str):
+    
+print(count_a('hello world', w,3)
+'''
